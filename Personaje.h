@@ -16,5 +16,9 @@ public:
 	virtual void mostrarDatos();
 	virtual int batalla() const = 0;
 	int generadorNumRandom(int inicio,int fin);
+	int getVida() const;
+	int getAtaque() const;
+	int getDefensa() const;
+	int getXP() const;
 };
 

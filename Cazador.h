@@ -12,6 +12,6 @@ public:
 	Cazador(string);
 	~Cazador();	
 	void mostrarDatos();
-	int batalla;
+	int batalla() const override;
 };
 

@@ -12,6 +12,6 @@ public:
 	Gladiador(string);
 	~Gladiador();
 	void mostrarDatos();
-	int batalla;
+	int batalla() const override ;
 };
 

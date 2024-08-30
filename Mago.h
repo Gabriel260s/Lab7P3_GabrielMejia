@@ -12,6 +12,6 @@ public:
 	Mago(string);
 	~Mago();
 	void mostrarDatos();
-	int batalla;
+	int batalla() const;
 };
 

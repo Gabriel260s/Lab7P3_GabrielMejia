@@ -12,6 +12,6 @@ public:
 	Astronomo(string);
 	~Astronomo();
 	void mostrarDatos();
-	int batalla;
+	int batalla() const;
 };
 

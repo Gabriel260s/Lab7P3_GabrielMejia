@@ -7,10 +7,20 @@ Gladiador::Gladiador(string nombre):Personaje(nombre)
 	constitucion = generadorNumRandom(1, 5);
 }
 
+Gladiador::~Gladiador()
+{
+}
+
 void Gladiador::mostrarDatos()
 {
 	Personaje::mostrarDatos();
-	cout << "La fuerza del cazador" << fuerza << endl;
-	cout << "La destreza del cazador" << destreza << endl;
-	cout << "La constitucion del cazador" << constitucion << endl;
+	cout << "La fuerza del gladiador: " << fuerza << endl;
+	cout << "La destreza del gladiador: " << destreza << endl;
+	cout << "La constitucion del gladiador: " << constitucion << endl;
+	cout << endl;
+}
+
+int Gladiador::batalla() const
+{
+	return (Personaje::getAtaque() + constitucion)*(fuerza+destreza);
 }
