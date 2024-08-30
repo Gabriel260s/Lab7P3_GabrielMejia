@@ -22,7 +22,6 @@ Personaje::~Personaje()
 void Personaje::mostrarDatos()
 {
 	cout << "Nombre del personaje: "<<nombre<<endl;
-	cout << "La clase del personaje: " << typeid(this).name() << endl;
 	cout << "La vida del personaje: " << vida << endl;
 	cout << "El ataque del personaje: "  << ataque << endl;
 	cout << "La experiencia del personaje: " << xp << endl;

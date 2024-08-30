@@ -14,7 +14,7 @@ Herbolario::~Herbolario()
 
 void Herbolario::mostrarDatos()
 {
-	srand(time(NULL));
+	cout << "La clase del personaje: herbolario" << endl;
 	Personaje::mostrarDatos();
 	cout << "La inteligencia del herbolario: " << inteligencia << endl;
 	cout << "La sabiduria del herbolario: " << sabiduria << endl;

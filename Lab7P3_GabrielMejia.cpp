@@ -123,6 +123,13 @@ void nombreMasExotico(t& Personaje1, t& Personaje2,string& nombre1,string& nombr
 
 //Elegi los personajes a comparar
 void elegirNombres() {
+	if (vectorPersonajes.size() < 2) {
+		cout << "No hay suficientes personajes" << endl;
+		return;
+	}
+
+
+
 	listarSimple();
 	if (vectorPersonajes.empty()) {
 		return;
@@ -146,6 +153,12 @@ void elegirNombres() {
 }
 //Pide el usuario la posicion de 2 personajes para que uno de los personajes ataque con 50% cada uno 
 void pelear() {
+
+	if (vectorPersonajes.size() < 2) {
+		cout << "No hay suficientes personajes" << endl;
+		return;
+	}
+
 	listarSimple();
 	if (vectorPersonajes.empty()) {
 		return;

@@ -14,7 +14,7 @@ Cazador::~Cazador()
 
 void Cazador::mostrarDatos()
 {
-	cout << "La clase del personaje: " << _ldclass << endl;
+	cout << "La clase del personaje: cazador" << endl;
 	Personaje::mostrarDatos();
 	cout << "La agilidad del cazador: " << agilidad<<endl;
 	cout << "La velocidad del cazador: " << velocidad << endl;
