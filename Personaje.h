@@ -1,6 +1,7 @@
 #pragma once
 #include <string>
 #include <iostream>
+#include <stdlib.h>  
 
 using namespace std;
 
@@ -20,5 +21,7 @@ public:
 	int getAtaque() const;
 	int getDefensa() const;
 	int getXP() const;
+	string getNombre() const;
+	void setVida(int vida) ;
 };
 

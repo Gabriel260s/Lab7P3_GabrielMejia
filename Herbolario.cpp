@@ -2,6 +2,7 @@
 
 Herbolario::Herbolario(string nombre):Personaje(nombre)
 {
+	srand(time(NULL));
 	inteligencia = generadorNumRandom(1, 5);
 	sabiduria = generadorNumRandom(1, 5);
 	suerte = generadorNumRandom(1, 5);
@@ -13,6 +14,7 @@ Herbolario::~Herbolario()
 
 void Herbolario::mostrarDatos()
 {
+	srand(time(NULL));
 	Personaje::mostrarDatos();
 	cout << "La inteligencia del herbolario: " << inteligencia << endl;
 	cout << "La sabiduria del herbolario: " << sabiduria << endl;

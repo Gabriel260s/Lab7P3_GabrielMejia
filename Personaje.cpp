@@ -6,6 +6,7 @@ Personaje::Personaje()
 
 Personaje::Personaje(string nombre)
 {
+	srand(time(NULL));
 	this->nombre = nombre;
 	vida = 100;
 	ataque = generadorNumRandom(5,25);
@@ -21,7 +22,7 @@ Personaje::~Personaje()
 void Personaje::mostrarDatos()
 {
 	cout << "Nombre del personaje: "<<nombre<<endl;
-	cout << "La clase del personaje: " << typeid(Personaje).name() << endl;
+	cout << "La clase del personaje: " << typeid(this).name() << endl;
 	cout << "La vida del personaje: " << vida << endl;
 	cout << "El ataque del personaje: "  << ataque << endl;
 	cout << "La experiencia del personaje: " << xp << endl;
@@ -30,7 +31,8 @@ void Personaje::mostrarDatos()
 
 int Personaje::generadorNumRandom(int rango,int fin)
 {
-	return (rand() % rango) + fin;
+	srand(time(NULL));
+	return (rand() % fin) + rango-1;
 }
 
 int Personaje::getVida() const
@@ -51,4 +53,14 @@ int Personaje::getDefensa() const
 int Personaje::getXP() const
 {
 	return xp;
+}
+
+string Personaje::getNombre() const
+{
+	return nombre;
+}
+
+void Personaje::setVida(int vida) 
+{
+	this->vida = vida;
 }

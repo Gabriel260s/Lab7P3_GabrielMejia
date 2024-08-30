@@ -2,6 +2,7 @@
 
 #include <string>
 #include <iostream>
+#include <stdlib.h>  
 #include "Personaje.h"
 using namespace std;
 class Mago :public Personaje

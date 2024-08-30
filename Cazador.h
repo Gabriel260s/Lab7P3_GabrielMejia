@@ -3,6 +3,7 @@
 #include <string>
 #include <iostream>
 #include "Personaje.h"
+#include <stdlib.h>  
 using namespace std;
 class Cazador:public Personaje
 {
