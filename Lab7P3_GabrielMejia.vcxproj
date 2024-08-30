@@ -127,7 +127,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Astronomo.cpp" />
+    <ClCompile Include="Cazador.cpp" />
+    <ClCompile Include="Gladiador.cpp" />
+    <ClCompile Include="Herbolario.cpp" />
     <ClCompile Include="Lab7P3_GabrielMejia.cpp" />
+    <ClCompile Include="Mago.cpp" />
+    <ClCompile Include="Personaje.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Astronomo.h" />
+    <ClInclude Include="Cazador.h" />
+    <ClInclude Include="Gladiador.h" />
+    <ClInclude Include="Herbolario.h" />
+    <ClInclude Include="Mago.h" />
+    <ClInclude Include="Personaje.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
